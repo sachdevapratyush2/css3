@@ -1,0 +1,45 @@
+#header {
+    text-align: center;
+}
+#content:after {
+    content: '';
+    display: table-cell;
+    clear: both;
+}
+#content {
+    padding: 0px 25px;
+}
+.column {
+    float: left;
+    width: 30%;
+    padding: 0px 10px;
+    border-right: 1px solid #000000;
+}
+.column:last-child {
+    border-right: none;
+}
+
+@media(max-width: 992px){
+    .column {
+        width: 45%;
+    }
+    .column:last-child {
+        width: 100%;
+    }
+}
+
+@media(max-width: 640px){
+    .column {
+        width: 100%;
+        float: none;
+        border-right: none;
+        border-bottom: 1px solid #000;
+        background: red;
+    }
+}
+/*
+@media screen and (max-width: 699px) and (min-width: 520px) {
+    .column {
+        background-color: brown;
+    }
+}*/
